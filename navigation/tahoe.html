@@ -50,12 +50,20 @@
 			padding: 10px;
 		}
 
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+
 		img {
 			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			height: 575px;
-			width: 540px;
+			padding: 2px;
+			width: 100%;
+		}
+
+		.imageContainer > img:hover {
+			width: 500px;
+			height: 200px;
 		}
 	</style>
 </head>
@@ -63,21 +71,48 @@
 <body>
 
 	<nav>
+		<a href="home.html">Home</a>
 		<a href="tahoe.html">Tahoe</a>
-		<a href="#">Big Sur</a>
+		<a href="big-sur.html">Big Sur</a>
 	</nav>
 	
 	<main>
 		<h1>Tahoe</h1>
-		<div>
-			<img src="./src/tahoe_backpacking_trip_summer_2020_3.jpg"> 
+		<div class="grid">
+		<div class="imageContainer">
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_1.jpg"> 
+		</div>
+		<div class="imageContainer">
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_11.jpg"> 
+		</div>
+		<div class="imageContainer">
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_2.jpg"> 
 		</div>
 		<div>
-			<img src="./src/tahoe_backpacking_trip_summer_2020_2.jpg"> 
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_3.jpg"> 
 		</div>
 		<div>
-			<img src="./src/tahoe_backpacking_trip_summer_2020_1.jpg"> 
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_4.jpg"> 
 		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_5.jpg"> 
+		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_6.jpg"> 
+		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_7.jpg"> 
+		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_8.jpg"> 
+		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_9.jpg"> 
+		</div>
+		<div>
+			<img src="../src/tahoe/tahoe_backpacking_trip_summer_2020_10.jpg"> 
+		</div>
+	</div>
 	</main>
 
 </body>
